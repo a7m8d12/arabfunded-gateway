@@ -24,7 +24,7 @@ export default function Contact() {
     // Create mailto link with form data
     const subject = encodeURIComponent(`Launch Notification - ${formData.name}`);
     const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message || 'Please notify me when ArabFunded launches.'}`);
-    window.location.href = `mailto:support@arabfunded.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:arabfunded@gmail.com?subject=${subject}&body=${body}`;
     setTimeout(() => {
       toast.success(t('contact.success'));
       setFormData({
